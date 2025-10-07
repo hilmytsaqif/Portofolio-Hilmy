@@ -6,17 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="src/output.css" rel="stylesheet">
 
-    
-    <!-- Slick Slider CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <title>Portofolio Hilmy</title>
 </head>
 
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- Slick Slider JS -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <!-- Initialize Slick Slider -->
@@ -32,14 +27,67 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev">←</button>',
-        nextArrow: '<button type="button" class="slick-next">→</button>'
+        nextArrow: '<button type="button" class="slick-next">→</button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $('.slider-pcb').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
+    });
+
+    $('.slider-sumo').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    dots: true
+                }
+            }
+        ]
     });
 });
 </script>
 
     <body>
     
-    <!-- Navbar Section Start -->
+<!-- Navbar Section Start -->
         <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
             <div class="container">
                 <div class="flex items-center justify-between relative">
@@ -56,16 +104,16 @@ $(document).ready(function(){
                         <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                             <ul class="block lg:flex">
                                 <li class="group">
-                                    <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                                    <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                                    <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About Me</a>
                                 </li>
                                 <li class="group">
                                     <a href="#experience" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Experience</a>
                                 </li>
                                 <li class="group">
-                                    <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portofolio</a>
+                                    <a href="#portofolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
                                 </li>
                                 <li class="group">
                                     <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
@@ -76,15 +124,15 @@ $(document).ready(function(){
                 </div>
             </div>
         </header>
-        <!-- Navbar Section End -->
+<!-- Navbar Section End -->
 
-        <!-- Hero Section Start -->
+<!-- Hero Section Start -->
         <section id="home" class="pt-36">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full self center px-4 lg:w-1/2 mt-10">
-                        <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Halo Semua 👋, 
-                        saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl ">Hilmy Tsaqif Firdaus</span></h1>
+                        <h1 class="text-base font-semibold text-primary md:text-xl lg:text-2xl">Hello! 👋 I'm, 
+                        <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl ">Hilmy Tsaqif Firdaus</span></h1>
                         <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Student in
                         <span class="text-dark">Jendral Soedirman University</span></h2>
                         <p class="font-medium text-secondary mb-10">"The only way to do great work is to love what you do." - Steve Jobs</p>
@@ -105,14 +153,14 @@ $(document).ready(function(){
                 </div>
             </div>
         </section>
-        <!-- Hero Section Start  -->
+<!-- Hero Section Start  -->
         
-        <!-- About Section Start -->
+<!-- About Section Start -->
         <section id="about" class="pt-36 pb-32">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 mb-10 lg:w-1/2">
-                        <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+                        <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
                         <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Perkenalan</h2>
                         <p class="font-medium text-base text-secondary max-w-xl lg-text-lg justify-center">Saya mahasiswa Teknik Elektro di Universitas Jenderal Soedirman, saya memiliki ketertarikan yang mendalam pada bidang robotik dan matematika. Saya fokus pada pemahaman teori dan aplikasi praktis yang melibatkan pemrograman robot. Saya juga aktif mengikuti workshop dan seminar terkait untuk memperdalam pengetahuan serta keterampilan, dengan tujuan berkontribusi dalam pengembangan teknologi robotik dan aplikasi matematika di masa depan.</p>
                     </div>
@@ -147,136 +195,132 @@ $(document).ready(function(){
                 </div>
             </div>
         </section>
-        <!-- About Section End -->
+<!-- About Section End -->
 
-<!-- Experience Section Start -->
-<section id="experience" class="pt-36 pb-16 bg-slate-100">
-    <div class="container">
-        <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">MY EXPERIENCE</h4>
-                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Pencapaian Terbaru</h2>
-            </div>
-        </div>
-
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-            <!-- Achievement 1 -->
-            <div class="mb-12 p-4 md:w-1/2">
-                <div class="rounded-md shadow-md overflow-hidden">
-                    <div><img src="dist/img/portofolio/1.png" alt="Juara 2 KSM Matematika" class="w-full h-64 object-cover"></div>
-                </div>
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Juara 2 Kompetisi Sains Madrasah Bidang Matematika</h3>
-                <p class="text-3xl font-bold text-primary mb-3">2022</p>
-                <p class="font-medium text-base text-secondary">Juara 2 Se-Kabupaten Purwakarta yang diselenggarakan Kementerian Agama dan melaju ke tingkat Provinsi</p>
-            </div>
-
-            <!-- Achievement 2 -->
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="rounded-md shadow-md overflow-hidden">
-                    <div class="slider-achievement xl:mx-auto">
-                        <div><img src="dist/img/portofolio/2.png" alt="Juara 2 Robot Line Follower" class="w-full h-64 object-cover"></div>
-                        <div><img src="dist/img/portofolio/2-2.png" alt="Juara 2 Robot Line Follower 2" class="w-full h-64 object-cover"></div>
+<!-- Achievement Section Start -->
+        <section id="experience" class="pt-36 pb-16 bg-slate-100">
+            <div class="container">
+                <div class="w-full px-4">
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h4 class="font-semibold text-lg text-primary mb-2">MY EXPERIENCE</h4>
+                        <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Pencapaian Terbaru</h2>
                     </div>
                 </div>
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Juara 2 Lomba Robot Line Follower</h3>
-                <p class="text-3xl font-bold text-primary mb-3">2022</p>
-                <p class="font-medium text-base text-secondary">Juara 2 Se-Provinsi Jawa Barat pada ajang Mechatronic Competition 2022, yang diselenggarakan Politeknik Engineering Indonesia</p>
-            </div>
 
-            <!-- Achievement 3 -->
-            <div class="mb-12 p-4 md:w-1/2">
-                <div class="rounded-md shadow-md overflow-hidden">
-                    <div><img src="dist/img/portofolio/3.png" alt="Juara 1 Kursus Python" class="w-full h-64 object-cover"></div>
+                <div class="w-full px-4 flex flex-wrap justify-center">
+                    <!-- Achievement 1 -->
+                    <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="dist/img/portofolio/1.png" alt="Juara 2 KSM Matematika" class="w-full h-40 md:h-48 lg:h-56 object-cover">
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-4 mb-2">Juara 2 Kompetisi Sains Madrasah Bidang Matematika</h3>
+                        <p class="text-2xl font-bold text-primary mb-2">2022</p>
+                        <p class="font-medium text-sm text-secondary">Juara 2 Se-Kabupaten Purwakarta yang diselenggarakan Kementerian Agama dan melaju ke tingkat Provinsi</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <div class="slider-achievement">
+                                <div><img src="dist/img/portofolio/2.png" alt="Juara 2 Robot Line Follower" class="w-full h-40 md:h-48 lg:h-56 object-cover"></div>
+                                <div><img src="dist/img/portofolio/2-2.png" alt="Juara 2 Robot Line Follower 2" class="w-full h-40 md:h-48 lg:h-56 object-cover"></div>
+                            </div>
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-4 mb-2">Juara 2 Lomba Robot Line Follower</h3>
+                        <p class="text-2xl font-bold text-primary mb-2">2022</p>
+                        <p class="font-medium text-sm text-secondary">Juara 2 Se-Provinsi Jawa Barat pada ajang Mechatronic Competition 2022, yang diselenggarakan Politeknik Engineering Indonesia</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="dist/img/portofolio/3.png" alt="Juara 1 Kursus Python" class="w-full h-40 md:h-48 lg:h-56 object-cover">
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-4 mb-2">Juara 1 Kursus Python</h3>
+                        <p class="text-2xl font-bold text-primary mb-2">2024</p>
+                        <p class="font-medium text-sm text-secondary">Menjadi Juara 1 dan yang terbaik di grup kursus coding Python yang diselenggarakan Kodland</p>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="dist/img/portofolio/4.png" alt="16 Besar Robot Transporter" class="w-full h-40 md:h-48 lg:h-56 object-cover">
+                        </div>
+                        <h3 class="font-semibold text-lg text-dark mt-4 mb-2">16 Besar Lomba Robot Transporter</h3>
+                        <p class="text-2xl font-bold text-primary mb-2">2024</p>
+                        <p class="font-medium text-sm text-secondary">16 Besar dari 55 peserta dan Top 2 pada babak kualifikasi 16 besar pada ajang Polines Robotic Contest 2024, yang diselenggarakan Politeknik Negeri Semarang</p>
+                    </div>
                 </div>
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Juara 1 Kursus Python</h3>
-                <p class="text-3xl font-bold text-primary mb-3">2024</p>
-                <p class="font-medium text-base text-secondary">Menjadi Juara 1 dan yang terbaik di grup kursus coding Python yang diselenggarakan Kodland</p>
             </div>
+        </section>
+        <!-- Achievement Section End -->
 
-            <!-- Achievement 4 -->
-            <div class="mb-12 p-4 md:w-1/2">
-                <div class="rounded-md shadow-md overflow-hidden">
-                    <div><img src="dist/img/portofolio/4.png" alt="16 Besar Robot Transporter" class="w-full h-64 object-cover"></div>
-                </div>
-                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">16 Besar Lomba Robot Transporter</h3>
-                <p class="text-3xl font-bold text-primary mb-3">2024</p>
-                <p class="font-medium text-base text-secondary">16 Besar dari 55 peserta dan Top 2 pada babak kualifikasi 16 besar pada ajang Polines Robotic Contest 2024, yang diselenggarakan Politeknik Negeri Semarang</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Experience Section End -->
-
-        <!-- Portofolio Section Start -->
-         <section id="portofolio" class="pt-36 pb-32 bg-slate-800">
+<!-- Portofolio Section Start -->
+        <section id="portofolio" class="pt-36 pb-32 bg-slate-800">
             <div class="container">
                 <div class="w-full px-4">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
                         <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Saya</h2>
-                        <p class="font-md text-md text-secondary md:text-lg">Ini dalah Hasil Robot yang Pernah saya Kerjakan Bersama Tim Saya.</p>
+                        <p class="font-md text-md text-secondary md:text-lg">Ini adalah Hasil Robot yang Pernah saya Kerjakan Bersama Tim Saya.</p>
                     </div>
 
-                    <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                        <div class="mb-12 p-4 md:w-1/2">
+                    <div class="w-full px-4 flex flex-wrap justify-center max-w-6xl mx-auto">
+                        <!-- Robot 1 -->
+                        <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
                             <div class="rounded-md shadow-md overflow-hidden">
-                                <img src="dist/img/clients/robot1.png" alt="web shop" width="w-full">
+                                <img src="dist/img/clients/robot1.png" alt="web shop" class="w-full h-48 md:h-56 lg:h-64 object-cover">
                             </div>
                         </div>
-                        <div class="mb-12 p-4 md:w-1/2">
+                        
+                        <!-- Robot 2 -->
+                        <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
                             <div class="rounded-md shadow-md overflow-hidden">
-                                <img src="dist/img/clients/robot2.png" alt="web learnning" width="w-full">
+                                <img src="dist/img/clients/robot2.png" alt="web learnning" class="w-full h-48 md:h-56 lg:h-64 object-cover">
                             </div>
                         </div>
+                        
                         <!-- SLIDER 1: PCB -->
-                    <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <div class="slider-achievement">
-                        <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/pcb1.png" alt="PCB Project 1"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
-                        <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/pcb2.png" alt="PCB Project 2"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
-                        <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/pcb3.png" alt="PCB Project 3"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
+                        <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                            <div class="rounded-md shadow-md overflow-hidden">
+                                <div class="slider-pcb">
+                                    <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/pcb1.png" alt="PCB Project 1" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                    <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/pcb2.png" alt="PCB Project 2" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                    <a href="https://u.easyeda.com/join?type=project&key=5030df74c40144e759bbb17ae1eecc59&inviter=aec1e48488f8445db07d5ee3494fe5ef" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/pcb3.png" alt="PCB Project 3" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
 
-                    <!-- SLIDER 2: SUMO -->
-                    <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <div class="slider-achievement">
-                        <a href="https://drive.google.com/uc?export=view&id=2AAAxxxx" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/sumo1.png" alt="Sumo Robot 1"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
-                        <a href="https://www.tinkercad.com/things/5JSE7rUJFnQ-base-bawah-sumo20" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/sumo2.png" alt="Sumo Robot 2"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
-                        <a href="https://www.tinkercad.com/things/jszO56Bf6J5-ban-baru-sumo80" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/sumo3.png" alt="Sumo Robot 3"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
-                        <a href="https://www.tinkercad.com/things/ilyWef7s169-full-base-sumo" target="_blank" rel="noopener noreferrer">
-                            <img src="dist/img/clients/sumo4.png" alt="Sumo Robot 4"
-                            class="w-full h-64 md:h-72 object-cover object-center cursor-pointer transition-transform duration-300 hover:scale-105">
-                        </a>
+                        <!-- SLIDER 2: SUMO -->
+                        <div class="mb-8 p-3 w-full md:w-1/2 lg:w-5/12">
+                            <div class="rounded-md shadow-md overflow-hidden">
+                                <div class="slider-sumo">
+                                    <a href="https://drive.google.com/uc?export=view&id=2AAAxxxx" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/sumo1.png" alt="Sumo Robot 1" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                    <a href="https://www.tinkercad.com/things/5JSE7rUJFnQ-base-bawah-sumo20" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/sumo2.png" alt="Sumo Robot 2" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                    <a href="https://www.tinkercad.com/things/jszO56Bf6J5-ban-baru-sumo80" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/sumo3.png" alt="Sumo Robot 3" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                    <a href="https://www.tinkercad.com/things/ilyWef7s169-full-base-sumo" target="_blank" rel="noopener noreferrer">
+                                        <img src="dist/img/clients/sumo4.png" alt="Sumo Robot 4" class="w-full h-48 md:h-56 lg:h-64 object-cover cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-
                     </div>
                 </div>
             </div>
-         </section>
-        <!-- Portofolio Section End -->
+        </section>
+<!-- Portofolio Section End -->
 
          <!-- Contact Section Start-->
           <section id="contact" class="pt-36-pb-32 mt-20">
